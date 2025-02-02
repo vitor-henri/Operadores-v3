@@ -1,0 +1,57 @@
+<!-- Dev by Vitor -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores V3</title>
+    <link rel="stylesheet" href="./operadores-v3.css">
+</head>
+<body>
+    <section class="container-main">
+        <div class="container-center">
+
+            <h1>Bem vindo a Calculadora do Vitor</h1>
+            <div class="container-btn-input">
+                <div class="container-btn__operacoes">
+                    <button onclick="somar()">SOMAR</button>
+                    <button onclick="subtrair()">SUBTRAIR</button>
+                    <button onclick="multiplicar()">MULTIPLICAR</button>
+                    <button onclick="dividir()">DIVIDIR</button>
+                    <button onclick="porcentagem()">%</button>
+                    <button onclick="desconto()">DESCONTO</button>
+                    <button onclick="acrescimo()">ACRÉSCIMO</button>
+                    <button onclick="potencia()">POTENCIA</button>
+                </div>
+                <div class="container-forms">
+                    <form>
+                        <label for="valor01">Valor 01:</label>
+                        <input type="number" id="valor01" name="valor01" placeholder="Digite um numero" step="0.01" required><br/>
+                        <label for="valor02">Valor 02:</label>
+                        <input type="number" id="valor02" name="valor02" placeholder="Digite um numero" step="0.01" required>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container-btn-limpar">
+                <button onclick="limpar()">LIMPAR</button>
+            </div>
+
+            <div class="container-resultado" id="resultado">
+                <ul>
+                    <li>Memória de Calculo</li>
+                    <li>Operação: <span>SOMA</span> </li>
+                    <li>Valor 01 digitado pelo usuário: <span> ${v1} </span> </li>
+                    <li>Valor 02 digitado pelo usuário: <span>${v2}</span> </li>       
+                    <li>O resultado da operação é ${v1} + ${v2} = <span>${v1 + v2}</span> </li>
+                </ul>
+            </div>
+            
+            <footer class="rodape">Todos os direitos reservados &copf; Vitor</footer>
+        </div>
+
+    </section>
+    <!-- Script para o js rodar -->
+    <script src="./operadores-v3.js"></script>
+</body>
+</html>
