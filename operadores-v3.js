@@ -3,8 +3,8 @@ function somar(){
     //  são 2 variaveis que guardam o valor do campo que o usuario digitou
     const valor1 = parseFloat(document.getElementById('valor01').value);
     const valor2 = parseFloat(document.getElementById('valor02').value);
-    // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    // transformar os container em em visivel para aparecer o resultado como um container
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // verificando se o usuario digitou algum campo em branco e dando um aviso se for True
     if (valor1 === '' || valor2 === ''){
@@ -31,7 +31,7 @@ function subtrair(){
     const valor1 = parseFloat(document.getElementById('valor01').value);
     const valor2 = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // verificando se o usuario digitou algum campo em branco e dando um aviso se for True
     if (valor1 === '' || valor2 === ''){
@@ -58,7 +58,7 @@ function multiplicar(){
     const valor1 = parseFloat(document.getElementById('valor01').value);
     const valor2 = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // verificando se o usuario digitou algum campo em branco e dando um aviso se for True
     if (valor1 === '' || valor2 === ''){
@@ -85,7 +85,7 @@ function dividir(){
     const valor1 = parseFloat(document.getElementById('valor01').value);
     const valor2 = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // verificando se o usuario digitou algum campo em branco e dando um aviso se for True
     if (valor1 === '' || valor2 === ''){
@@ -112,7 +112,7 @@ function porcentagem(){
     const valor1 = parseFloat(document.getElementById('valor01').value);
     const valor2 = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // verificando se o usuario digitou algum campo em branco e dando um aviso se for True
     if (valor1 === '' || valor2 === ''){
@@ -139,7 +139,7 @@ function desconto(){
     const preco = parseFloat(document.getElementById('valor01').value);
     const desconto = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // conta para calcular o desconto
     let valor_desconto = preco * (desconto/100);
@@ -169,7 +169,7 @@ function acrescimo(){
     const preco = parseFloat(document.getElementById('valor01').value);
     const acrescimo = parseFloat(document.getElementById('valor02').value);
     // transformar os container em flex para aparecer o resultado como um container
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
     // conta para calcular o acrescimo
     let valor_acrescimo = preco * (acrescimo/100);
@@ -199,7 +199,7 @@ function potencia(){
     const base = parseFloat(document.getElementById('valor01').value);
     const expoente = parseFloat(document.getElementById('valor02').value);
     // transformando o container resultado em flex para exibi-lo
-    document.getElementById('resultado').style.display = 'flex';
+    document.getElementById('resultado').style.visibility = 'visible';
     const resultado = document.getElementById('resultado');
 
     // Verificando se os campos estão preenchidos
@@ -220,8 +220,8 @@ function potencia(){
 };
 
 function limpar(){
-    //  o conteiner que esta com o id resultado ele vai deixar de ser flex e vai ser none, ou seja vai sumir
-    document.getElementById('resultado').style.display = 'none';
+    //  o conteiner que esta com o id resultado ele vai deixar de aparecer usando a propriedade hidden
+    document.getElementById('resultado').style.visibility = 'hidden';
     //  os campos do formularios serão armenezados
     document.getElementById('valor01').value = '';
     document.getElementById('valor02').value = '';
